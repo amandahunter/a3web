@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- SV 11-23 added english language. Common  setup for all pages-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- AH Responsive onto it all -->
+        <meta charset="UTF-8"> <!-- SV added character encoding set-->
+        <title>LASD's Splendid Projects</title> <!--SV Title to show on tab-->   
+        <link rel="stylesheet" href="css/stylesMain.css"> <!-- where to find the master css -->
+        <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/projects.html JD 11-16-->
+    </head>
+    <body>
+        <header>
+            <figure> <!-- logo semantic element in header-->
+                <a class=deadlink href="index.html">
+                <img src="images/headerimages/logo_v2.svg" alt="LASD logo" style="max-height:100%;" id="logo"></a>
+            </figure>
+            <h1>Projects</h1> 
+        </header>
+
+        <!--<nav class="topnav" id="myTopnav" with modifications for the hamburger menu for smaller screens-->
+            <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a> 
+            <a href="AboutUs.html">About Us</a> 
+            <a href="services.html">Services</a>
+            <a class="active" href="projects.html">Projects</a>
+            <a href="GetInvolved.html">Get Involved</a> 
+            <a href="blag.html">Blag</a>
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+                &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon-cms-21686 for the UTF reference code & idea-->
+              </a>
+        </nav> 
+        <main> 
+            <section>
+                <h2 class="blagtitle">Project Summaries</h2> <!-- JD 12-07 If we're using section semantics, we should have a header here to avoid warnings on validator -->    
+                <!--Christie's projects page reverses the layout order when compared to the Services page, for fun--> 
+                <!-- this article is connected via hyperlink from the Services page using the punny "fatherbaseProj" id-->
+                <article id="fatherbaseProj" class="serve rightText"><!--this article is right aligned--> <!-- SV added ID to use as anchor points for inks-->
+                    <div class="textZone">
+                        <h3>Database Creation</h3>    
+                        <h5>Municipal Staff Collaboration 2021</h5>
+                        <p> Parks staff from a local municipality approached LASD to assist 
+                        them with creating a database of trees within their jurisdiction.  Staff will 
+                        use this to create monthly schedules, establish annual projects for urban tree revitalization, 
+                        generate budgets, and respond citizen complaints.</p>
+                        <p>The LASD environmental team worked closely with Parks staff to 
+                        suss out key tree data to collect. A digital data collection form was created for 
+                        rapid field assessment.  In the office, staff easily transferred the data into 
+                        a custom database.  Parks staff were trained by LASD to update 
+                        and query the data.  LASD also designed custom forms and reports so staff can quickly 
+                        respond to council requests and questions from the public.</p>
+                        <p>Municipal staff were so thrilled that LASD will be retained in 2022 to design additional 
+                        databases for other park amenities.</p>  
+                    </div>
+                    <figure class="picBox">  <!-- because every bunch of text should have a photo to liven up the page-->
+                        <img src="images/projectimages/databasePhotoOfTree-2.jpg" alt="Tree" class="picSet"><!--alternative text in case there is an error loading pic.-->
+                    </figure>   
+                </article>
+                <!-- this article is connected via hyperlink from the Services page using the "spatialProj" id-->
+                <article id="spatialProj" class="serve leftText"> <!-- SV added ID to use as anchor points for inks-->
+                    <div class="textZone">
+                        <h3>Spatial Analysis</h3>
+                        <h5>Crater Lake National Park, Fall 2021</h5> 
+                        <p>Our team was employed to work with the Crater Lake - National Park Service in Oregon to create and ground truth 
+                        a habitat suitability analysis of the rare species Webius designanius, a critically endangered species in the state 
+                        of Oregon. The Crater Lake National Park is a haven for the plant species which thrives on the boundary of several rock 
+                        types found around Crater Lake. The heterogeneity of rock type around the crater creates the edge habitat the plant 
+                        requires to grow. From our habitat suitability analysis, park staff and researchers visited sites determined to be possible 
+                        habitat for the rare species and were able to track down three new clusters of the rare plant. Our work at LASD, has helped 
+                        to identify key habitat for W. designanius and insure the ecological integrity of the park is maintained. </p>
+                    </div>
+                    <figure class="picBox">
+                        <img src="images/projectimages/SpatialAnalysisPic.PNG" alt="Spatial" class="picSet"><!--picset class describes how image is to portray on screen -->
+                    </figure>
+                </article>
+                <!-- this article is connected via hyperlink from the Services page using the "droneProj" id-->
+                <article id="droneProj" class="serve rightText"> <!-- SV added ID to use as anchor points for inks-->
+                    <div class="textZone">
+                        <h3>Remote Surveying</h3>
+                        <h5>Keeley and Frontier Mine UAV Survey 2020</h5>
+                        <p> Our team of aerial surveyors made an expedition to the Keeley and Frontier mines. They gathered data which were then 
+                        transformed into three dimensional maps using photogrammetry. Before drones were more common, mapping of large areas was done using manned aircraft, airplanes or helipcopters. 
+                        Drone mapping is a way to do this job cheaper, safer, and with simpler logistics. Furthermore, 3D mapping is an incredible service to try out! Not only 
+                        does it allow us to visualize a complex terrain, it allows us to monitor progress of development.</p>
+                    </div>
+                    <figure class="picBox">
+                        <img src="images/drone/keeley3.jpg" alt="Keely" class="picSet">
+                    </figure>  
+                </article>
+
+                <!-- this article is connected via hyperlink from the Services page using the "surveyProj" id-->          
+                <article id="surveyProj" class="serve leftText"> <!-- SV added ID to use as anchor points for inks-->
+                    <div class="textZone">
+                        <h3>Bark Lake Traverse</h3>
+                        <h5>Local Camp Expansion Survey 2021</h5> 
+                        <p>In the fall of 2021, LASD had an amazing opportunity at Bark Lake to conduct a closed traverse survey as part of a camp 
+                        survey plan. Our team members went out and surveyed 12 traverses and afterwards drafted the survey data to a digital
+                        map using AutoCAD Mapping software. After doing so, we discovered our linear error of closure was within a meter and the
+                        angular error of closure was less than a degree! Props to our team who conducted this successful survey</p>
+                    </div>
+                    <figure class="picBox">
+                        <img src="images/projectimages/SurveyProjectPicJMD.png" alt="CADplot" class="picSet">
+                    </figure>
+                </article>
+
+                <!-- this article is connected via hyperlink from the Services page using the "codeProj" id-->     
+                <article id="codeProj" class="serve rightText">  <!-- SV added ID to use as anchor points for inks-->
+                    <div class="textZone">
+                        <h3>Software Programming and Geoprocessing</h3>
+                        <h5>British Columbia Dam Optimization Initiative</h5>
+                        <p> LASD was responsible for creation of a geolocating service kindly dubbed the "human beaver project", intended to 
+                            use Digital Elevation Models to derive stream location and flow. This data was then used to find optimal hydroelectric dam 
+                            locations for communities within the Fraser Watershed, for further analysis by hydrogeological engineers. Utilizing ArcGIS
+                            Pro's modelling capabilities, the team then built a user interface for input selection and to automate calculations. The 
+                            project was a critical success and is expected to assist in improving British Columbia's energy infrastructure.
+                        </p>
+                    </div>
+                    <figure class="picBox">
+                        <img src="images/projectimages/HumanBeaverGUI.jpg" alt="Web Layout" class="picSet">
+                    </figure>
+                </article>
+            </section> 
+            <aside id="ProjectsAside"><!--using cascading list for aside.  Inspired by teh urge to do something different than the other pages-->
+                <h3 class="contactheaders underlineTitle">Our projects have spanned</h3>
+                <ul>
+                    <li>5 continents
+                        <ul> 
+                            <li> Asia</li>
+                            <li> North America</li>
+                            <li> South America</li>
+                            <li> Europe</li>
+                            <li> Antartica</li>
+                        </ul>
+                    <li> 3 oceans
+                        <ul>
+                            <li>Atlantic</li>
+                            <li>Indian</li>
+                            <li>Arctic</li>
+                        </ul>
+                    <li>11 mountain ranges
+                        <ul>
+                            <li> Himalayas</li>
+                            <li> Karakoram</li>
+                            <li> Hindu Kush</li>
+                            <li> Alps</li>
+                            <li> Pyrenees</li>
+                            <li> Caucasus</li>
+                            <li> Ellsworth</li>
+                            <li> Appalachian</li>
+                            <li> Rockies</li>
+                            <li> Sierra Nevada</li>
+                            <li> Andes</li>
+                        </ul>
+                    <li> 2 deserts
+                        <ul>
+                            <li>Mohave</li>
+                            <li>Patagonian</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+        <footer> <!-- Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
+            <p class="footernotes">&#169;2021. Land Air Sea Digital Inc. All Rights Reserved. Any Land Air Sea Digital products are Trademarks owned by Group 1 of GEOM102 Web Design Programming</p>
+            <p class="footernotes">Email: <a class=deadlink>infoinquest@lasd.ca</a> | Phone: <a class=deadlink>(416) 888-8888</a> | <a class=deadlink>Terms of Use</a> | <a class=deadlink>Privacy Statement</a> | <a class=deadlink>Accessibility</a></p>
+        </footer>
+        <script src="js/morningJava.js"></script> <!--updated to single JS file for all coffee drinkers.  I myself prefer a shot of espresso in mine-->
+    </body>
+</html>

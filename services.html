@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- SV 11-23 added english language-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
+        <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
+        <title>LASD - Services</title> <!-- SV 11-25 -->   
+        <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
+        <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/template.html JD 11-16-->
+    </head>
+    <!--
+        Stephen 11-14 - Before we get into things, a brief style guide reminder.
+        Comments for communication use your full name, like in this one.
+        For comments that need to stick around through the submission, initial and date.
+        Please initial and date if you modify someone else's code, unless it's very minor.
+
+        When using this template to create subpages, remember:
+        USE SEMANTIC HTML.
+        Change the <title> above.
+        If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
+        use a Class or ID for it, so you don't break everyone else's page!
+
+        Oh, also, for each new page you get to delete all the comments from here - they only
+        apply to the template doc, not your individual page.
+    -->
+    <body>
+        <header>
+            <figure> <!--JD 11-17 - logo semantic element in header-->
+                <a class=deadlink href="index.html">
+                <img src="images/headerimages/logo_v2.svg" alt="LASD logo" style="max-height:100%;" id="logo"></a>
+            </figure>
+            <h1>Services</h1>
+        </header>
+
+        <nav class="topnav" id="myTopnav"> <!-- SV 12-02 - modifications for the hamburger menu-->
+            <a href="index.html">Home</a> 
+            <a href="AboutUs.html">About Us</a> 
+            <a class="active" href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="GetInvolved.html">Get Involved</a> 
+            <a href="blag.html">Blag</a>
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+                &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon-cms-21686 for the UTF reference code & idea-->
+              </a>
+        </nav> 
+
+        <main>
+            <section>
+                <!-- Fun intro write-up -->
+                <h2 class="blagtitle">Services We Offer</h2>
+                <p>Our professional team offers a great variety of GIS services. Since our team includes many specialists and emphasizes
+                    cross-training, none of our services suffer at the expense of others. We're happy to work with our clients to find
+                    out their needs without overselling. With a job well done, our clients know they can come back to us without worry
+                    when new projects come their way - our work is made to LASD. Our services include, but aren't limited to:
+
+                
+                <!-- SV did the HTML, Gabby did the content -->
+                <article class="serve leftText">
+                    <div class="textZone">
+                        <h3>Spatial Analysis</h3>
+                        <p>At LASD we have a robust team that excels in the technical components of geographic information systems, including
+                            data input, storage, pre-processing, analysis and output using both raster and vector spatial data models. Our team
+                            has regular training to keep up with the most up to date spatial analysis software, with the inclusion of the ESRI
+                            product suite ArcGIS Pro, ArcMap, and ArcCatalogue.</p>
+                    </div>
+                    <figure class="picBox">
+                        <!-- SV-12-08 - link to relevant project on project page -->
+                        <a href="projects.html#spatialProj">
+                            <img src="images/servicesimages/pond2.jpg" alt="Pond" class="picSet">
+                        </a>
+                    </figure>
+                </article>
+
+                <!-- SV did the HTML, Jon did the content -->
+                <article class="serve rightText">
+                    <div class="textZone">
+                        <h3 class>Surveying and CAD Mapping</h3>
+                        <p>Here at LASD, we specialize at acquiring spatial and attribute data in the field. This includes performing land-type surveys such as
+                        Horizontal Traverses and Differential Levelling for environmental assessment. We use the latest and greatest in surveying tools and 
+                        equipment to make sure our clients receive the most accurate data across the most varied environments and challenging terrains. In 
+                        addition to data collected on the field, LASD offers data integration services for efficient data migration into your respective GIS 
+                        / Land Information Systems. We boast a team with an incredible skillset in CAD mapping to digitize these features into maps and plans 
+                        using the latest industry standard software programs.</p>
+                    </div>
+                    <figure class="picBox">
+                        <!-- SV-12-07 - link to relevant project on project page -->
+                        <a href="projects.html#surveyProj">
+                            <img src="images/servicesimages/SurveyingServicePicJMD.PNG" alt="Surveying" class="picSet">
+                        </a>
+                    </figure>
+                </article>
+
+                <!-- SV did the HTML and the content -->
+                <article class="serve leftText">
+                    <div class="textZone">
+                        <h3>Web Development and Application Programming</h3>
+                        <p>LASD is proud to have a strong team of web developers capable of meeting any of your website needs. All of our programmers are masters of HTML, CSS, and Javascript,
+                            as well as knowledgable of jquery and utilizing Python for web. If a database is required, we are able to use SQL, MySQL, as well as standard geodatabases for
+                            any of your data or mapping needs. Please browse around this website to see examples of responsive HTML, properly coded CSS, as well as the added power that 
+                            javascript adds to a fully dynamic website. Check out our projects page for other examples!
+                        </p>
+                    </div>
+                    <figure class="picBox">
+                        <!-- SV-12-07 - link to relevant project on project page -->
+                        <a href="projects.html#codeProj">
+                            <img src="images/servicesimages/HumanBeaverCode.jpg" alt="Python Code" class="picSet">
+                        </a>
+                    </figure>
+                </article>
+                
+                <!-- SV did the HTML, Amanda did the content -->
+                <article class="serve rightText">
+                    <div class="textZone">
+                        <h3>UAV and Remote Sensing</h3>
+                        <p>Our team collects and analyzes data collected remotely (using satellites, aircrafts and unmanned aerial vehicles) to solve regional, 
+                            national and global problems in areas such as natural resource management, urban planning, and climate prediction. Our toolbox is a 
+                            wide ranging one including radio detection, radar and lidar, magnetometry, photogrammetry and we collect and integrate all these tools
+                             on a client by client basis. We focus heavily on the use of UAV for our data collection as there is a great need for multi-spectral drone 
+                             mapping in support of exploration. The Landsat images are compiled at a 30metre resolution, whereas the spatial resolution 
+                             of of UAV imagery is down to the cm. UAV solutions allow for faster data collection, with automated workflows, all while being safer to use by our team.  </p>
+                    </div>
+                    <figure class="picBox">
+                        <!-- SV-12-07 - link to relevant project on project page -->
+                        <a href="projects.html#droneProj">
+                            <img src="images/drone/mirasq2.jpg" alt="Drone Image of a Lovely Lake" class="picSet">
+                        </a>
+                    </figure>
+                </article>
+                
+                <!-- SV did the HTML, Christie did the content -->
+                <article class="serve leftText">
+                    <div class="textZone">
+                        <h3>Database Creation</h3>
+                        <p>Digital Mapping needs good data.  We at LASD extract data from multiple sources and are proficient at creating databases for all sizes of organizations 
+                        for any type of need.  Small non-profit agencies have benefitted from our custom-designed standalone databases, while multi-national consulting firms have praised
+                        us for the training we have provided to staff.</p>
+                    </div>
+                    <figure class="picBox">
+                        <!-- SV-12-08 - link to relevant project on project page -->
+                        <a href="projects.html#fatherbaseProj">
+                            <img src="images/servicesimages/Database.jpg" alt="Access DB" class="picSet">
+                        </a>
+                    </figure>
+                </article>
+
+            </section>
+
+            <!-- Sidebar for some self-promotion -->
+            <aside class=serviceSidebar>
+                <h2 class='underlineTitle'>Why hire us?</h2>
+                    <ul>
+                        <li>We have a diverse team of highly trained and cross-trained professionals.</li>
+                        <li>We have adaptable skillsets to suit any GIS needs.</li>
+                        <li>We're basically just awesome, all around.</li>
+                    </ul>
+                    <p id="hideSmall">Need convincing? Click on the service pictures to link to some of our awesome projects.</p>
+
+                <h2 id="giveMeMoreSpace" class='underlineTitle'>Testimonials</h2> <!-- These are 100% legit. Definitely from real, human clients. Not Sean's cousins at all. -->
+                <h4 class="officeDesc">"Fantastic!..."</h4>
+                    <p class="officeDesc">The team at LASD was incredible to work with - smart, efficient, and knowledgable. Well worth the investement!</p>
+                    <p class="rightP"> - Sally Skwherl</p>
+                <h4 class="officeDesc">"They made it so simple..."</h4>
+                    <p class="officeDesc">The analytical team from LASD were very professional. They listened to our needs and concerns, and were quickly able to set up
+                        and implement a system for us to use well into the future. They really are the 'Lasd' call you need to make - because they
+                        do it right the first time!</p>
+                    <p class="rightP"> - Simon Squarl</p>
+            </aside>
+        </main>
+
+        <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
+            <p class="footernotes">&#169;2021. Land Air Sea Digital Inc. All Rights Reserved. Any Land Air Sea Digital products are Trademarks owned by Group 1 of GEOM102 Web Design Programming</p>
+            <p class="footernotes">Email: <a class=deadlink>infoinquest@lasd.ca</a> | Phone: <a class=deadlink>(416) 888-8888</a> | <a class=deadlink>Terms of Use</a> | <a class=deadlink>Privacy Statement</a> | <a class=deadlink>Accessibility</a></p>
+        </footer>
+
+        <script src="js/morningJava.js"></script> <!-- SV 12-02 - mod 12-06 - updated to single JS file for all coffee drinkers-->
+
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- SV 11-23 added english language-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
+        <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
+        <title>Landing Page</title> <!--SV 11-14-->   
+        <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
+        <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/index.html JD 11-16-->
+    </head>
+    <!--
+        Stephen 11-14 - Before we get into things, a brief style guide reminder.
+        Comments for communication use your full name, like in this one.
+        For comments that need to stick around through the submission, initial and date.
+        Please initial and date if you modify someone else's code, unless it's very minor.
+
+        When using this template to create subpages, remember:
+        USE SEMANTIC HTML.
+        Change the <title> above.
+        If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
+        use a Class or ID for it, so you don't break everyone else's page!
+
+        Oh, also, for each new page you get to delete all the comments from here - they only
+        apply to the template doc, not your individual page.
+    -->
+    <body>
+        <header>
+            <figure> <!--JD 11-17 - logo semantic element in header-->
+                <img src="images/headerimages/logo.svg" alt="LASD logo" style="max-height:100%;" id="logo">
+            </figure>
+            <h1>Land-Air-Sea - Digital<br><a id=slogan>"Because you save the best for LASD"</a></h1> <!-- SV 11-23 - added the actual title-->   
+        </header>        
+
+        <nav class="topnav" id="myTopnav"> <!-- SV 12-02 - modifications for the hamburger menu-->
+            <a class="active" href="index.html">Home</a> 
+            <a href="AboutUs.html">About Us</a> 
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="GetInvolved.html">Get Involved</a> 
+            <a href="blag.html">Blag</a>
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+                &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon-cms-21686 for the UTF reference code & idea-->
+              </a>
+        </nav> 
+
+        <main> <!--SV 12-01 Moved <main> down to fix the nav bar-->
+            <section>
+                <h2 class="blagtitle">We are the Answer!</h2>
+                <article>
+                    <div id="landingPic"> <!--JD 12-08 Big welcoming picture for the landing page with text near top to inform user immediately-->
+                        <p id="landingText">If you've landed here, we're thrilled you made the right choice! While we may not have been your first stop,
+                            we will certainly be your LASD!
+                             </p>
+                    </div>
+                    <div> <!--JD 12-08 Adding quote for aesthetic, inspired by life coaching websites-->
+                        <p class="quote">"Meaningful quote that embodies our values and is related to GIS to appeal to any prospective clients who appreciate philosophical thought and perspectives" - Sun Tzu</p></div>
+                    <h3 class="landingTitle underlineTitle">What You Will Find</h3> <!-- Stephen 11/15 - I tab in the headers to help me visuallize the web heirarchy
+                         but it's not actually required, if you find it annoying I can stop.-->
+                        <p class ="getinvolvedElement1">As a collective of Geographic Information Systems professionals, you will discover we offer a dynamic range of dynamic ranges,
+                            including remote sensing, environmental spatial analysis, cartographic and mapping services, and one of our staff holds the guinness book 
+                            of records for most HTML fixed in under one hour. Yes! We have him. Our team of analysts will analyze things you didn't even know were 
+                            possible to be analyzed. Please, have a look around our site to learn more about the team doing the work, the work we have done,
+                            the reasons we do it, and the locations we are doing it. 
+                </article>
+
+                
+            </section>
+            <aside><!--AH 11-14 - adds the right column -->
+                <h3 class="spacecadetbaby">BY LAND!</h3>
+                    <p> We Survey</p>
+                <h3 class= "spacecadetbaby">By AIR!</h3>
+                    <p> We survey as well, it's called remote sensing though</p>
+                <h3 class= "spacecadetbaby">By SEA!</h3>
+                    <p>We have a beach party and float around, but we also can do hydrographic analyses....and survey</p> 
+                <h3 class= "spacecadetbaby">By the end, We Digitize!</h3>
+                    <p>And by that we mean anything computer-related to manage that data. Want to know more, stick around and <a href = "services.html">explore!</a></p>                         
+            </aside>
+        </main>
+
+        <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
+            <p class="footernotes">&#169;2021. Land Air Sea Digital Inc. All Rights Reserved. Any Land Air Sea Digital products are Trademarks owned by Group 1 of GEOM102 Web Design Programming</p>
+            <p class="footernotes">Email: <a class=deadlink>infoinquest@lasd.ca</a> | Phone: <a class=deadlink>(416) 888-8888</a> | <a class=deadlink>Terms of Use</a> | <a class=deadlink>Privacy Statement</a> | <a class=deadlink>Accessibility</a></p>
+        </footer>
+
+        <script src="js/morningJava.js"></script> <!-- SV 12-02 - mod 12-06 - updated to single JS file for all coffee drinkers-->
+    </body>
+</html>

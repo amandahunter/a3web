@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- SV 11-23 added english language-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
+        <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
+        <title>Get Involved</title> <!--SV 11-14-->   
+        <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
+        <script src="js/GetInvolved.js"></script>
+        <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/GetInvolved.html JD 11-16-->
+    </head>
+    <!--
+        Stephen 11-14 - Before we get into things, a brief style guide reminder.
+        Comments for communication use your full name, like in this one.
+        For comments that need to stick around through the submission, initial and date.
+        Please initial and date if you modify someone else's code, unless it's very minor.
+
+        When using this template to create subpages, remember:
+        USE SEMANTIC HTML.
+        Change the <title> above.
+        If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
+        use a Class or ID for it, so you don't break everyone else's page!
+
+        Oh, also, for each new page you get to delete all the comments from here - they only
+        apply to the template doc, not your individual page.
+    -->
+    <body>
+        <header>
+            <figure> <!--JD 11-17 - logo semantic element in header-->
+                <a class=deadlink href="index.html">
+                <img src="images/headerimages/logo_v2.svg" alt="LASD logo" style="max-height:100%;" id="logo"></a>
+            </figure>
+            <h1>Join LASD</h1> <!-- CP 12-02 - all the other pages have Camel Case titles.  Should this be changed to be consistent?-->
+        </header>
+
+        <nav class="topnav" id="myTopnav"> <!-- SV 12-02 - modifications for the hamburger menu-->
+            <a href="index.html">Home</a> 
+            <a href="AboutUs.html">About Us</a> 
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a class="active" href="GetInvolved.html">Get Involved</a> 
+            <a href="blag.html">Blag</a>
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+                &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon-cms-21686 for the UTF reference code & idea-->
+              </a>
+        </nav> 
+        
+        <main> <!--SV 12-01 Moved <main> down to fix the nav bar-->
+            <section>
+                <h2 class="blagtitle">JOIN US! We are the answer</h2><!--JD 12-02-->
+                <article>
+                    <div class="getinvolvedElement1"><h3 class = "underlineTitle">Passion Drives Us</h3> <!--JD 12/02 Description of why to join us-->
+                        <p class="intropara">Here at LASD, we pride ourselves in what we do and carry out our work everyday with a sense of love and duty. For out of this mentality, we've become a team
+                        of hard (and smart) working professionals who rely and learn from each other, and who, in the direst of situations and tightest of deadlines, always get the
+                        job done and grow from that experience. If this sounds like a crew you can vibe with, we at LASD, implore you to join our growing team of passionate GIS 
+                        professionals. And if that hasn't convinced you, kindly glance over the <a href ="#benefits">benefits we offer</a>. When you are ready, please review our current opportunities 
+                        <a href ="#Career">below</a>.</p><!-- JD 12-06 Create links to subpages SOURCE: https://www.w3schools.com/html/html_links_bookmarks.asp -->
+                        <figure class="getinvolvedElement2"><img src="images/drone/selfiegeo.jpg" alt="selfie" class="selfie"></figure> <!--JD 12-08 image to exemplify passion-->
+                    </div>
+                    <div class="getinvolvedElement1"><h3 class = "underlineTitle" id = "benefits">Benefits</h3> <!--JD 12/02 Small Description of benefits-->
+                        <p class="intropara">Here at LASD we understand that you're an emotional being with needs. Although we love our work, we understand that <a class="bold">WE are MORE than our WORK</a>. In order to keep our employees working for us
+                        at maximum efficiency, we do our best to take care of their physical and mental health.</p>
+                        <figure class="getinvolvedElement2"><img src="images/headerimages/puffinreserve3.JPG" alt="puffinreserve" class="selfie"></figure> <!--JD 12-08 image to exemplify health benefits-->
+                        <h4 class="getinvolvedElement2 subtitle">Health Care</h4>
+                            <p>We offer an comprehensive health care program which includes <a class="bold">travel insurance, chiropractic, dental, vision, disability accessibility</a> and <a class="bold">injury remediation</a> to all
+                                full-time employees. These benefits extend to family and any dependants. We care about our employees ability to work for us at maximum efficiency, and we know that during those
+                                strenuous efforts when rushing to meet those last-minute deadlines, health should be the LASD thing on your mind.</p>
+                            
+                        <h4 class="getinvolvedElement2 subtitle">Work-Life Balance</h4>
+                            <p>We offer flexible working hours and five weeks of paid vacation per year in order to get that well deserved break. This is done with hopes of encouraging our team members
+                                to live beyond their work and contribute to good in this world. We also cover the costs for further education and professional development that team members
+                                wish to pursue in order to bring back and contribute to our mission. Here at LASD, we believe in growing our collective skillset to remain relevant in the ever-evolving 
+                                technical landscape that is GIS.</p>
+                            
+                        <h4 class="getinvolvedElement2 subtitle">Recreation</h4>
+                            <p>Nothing builds that sense of comraderie better than engaging in fun, team-bonding activities. Here at LASD, we commit our team members to take part in weekly team exercies
+                                and sports such as Escape Rooms, recreation sport leagues (Soccer, Basketball, Hockey), rock climbing, archery tag, paintball and so much more.</p> 
+                            <p><br>When we're back in the office, we even do a "Bring your Pet to Work" Day every friday - even we know Friday afternoons tend to be unproductive, might as well make 
+                                it unproductive with our furry friends!</p>
+                            
+                        <h4 class="getinvolvedElement2 subtitle">Convenient Finances</h4>
+                            <p>Here at LASD, you're entitled to annual salary increases of up to 20 percent. Additionally, we offer bi-weekly RRSP contributions via a collaborative retirement savings
+                                program to facilitate those golden years we all yearn for.</p>      
+                    </div>                            
+                    <div class="getinvolvedElement1"><h3 class = "underlineTitle" id ="Career">Current Opportunities</h3> <!--JD 12/02 Listing current job openings. Add a link box with a deadlink functionality-->
+                        <figure><img src="images/headerimages/passion.jpg" alt="passion" class="selfie"></figure> <!--JD 12-08 image to exemplify career prospects-->
+                        <p class="intropara">Interested in joining? We are currently accepting applications for the following opportunities. We implore any enthusiastic individual to submit an application or inquire about
+                        more upcoming oppurtunities with our team by sending an email to <a class=deadlink>hrinquest@lasd.ca</a>. We are constantly expanding and are committed to garnering the talent and
+                        and skills to foster more growth. We hope to hear from you soon!</p>
+                        <p class="getinvolvedElement1 ConWithUs jobwrap"><a class="joblink">Web Development Assistant</a><a class="joblink">Junior CAD specialist</a><a class="joblink">Project Coordinator</a>
+                            <a class="joblink">Field Technician</a><a class="joblink">Custodian</a><a class="joblink">Nutritional Manager and Cook</a><a class="joblink">Personal Fitness Instructor</a>
+                            <a class="joblink">Dog Walker</a><a class="joblink">Administrative Assistant</a><a class="joblink">Sr. Logistics Officer</a></p>
+                    </div>
+                </article>
+            </section>
+                <aside id="ConWithUs"><!--JD 12-08 Creating a contact us side bar inspired by real consulting companies with map and contact info for departments -->
+                    <h2>Connect with Us</h2>
+                        <h3 class="contactheaders underlineTitle">Where we're Based</h3>
+                            <h4>Main Office Address</h4>
+                                <p>200 Albert St S, Lindsay, ON K9V 5E6<br></p> <!--JD 12-06 - small description of location inspired by actual contact info pages -->
+                                <p class=officeDesc>We are located within the wonderfully accomodating Frost Campus of Fleming College, home to one of the most acclaimed GIS Programs in Canada.
+                                    Though many of us currently work remotely, do take the opportunity to visit our amazing 10 sq ft. office space. It has more plants than people right now, but
+                                    on occassion you may see our lone CAD mapper and IT tech who we require to be on site at least 2 times a week. Looking forward to meeting you!
+                                </p>
+                            <a class=deadlink href ="https://www.google.com/maps/dir//Fleming+College+-+Frost+Campus+Store,+200+Albert+St+S,+Lindsay,+ON+K9V+5E6/@44.3410189,-78.7412238,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89d58ce9667aaaab:0x26e572ce46a757c2!2m2!1d-78.7412238!2d44.3410189!3e0">
+                            <img src = 'https://maps.googleapis.com/maps/api/staticmap?center=fleming+college,Lindsay,ON&zoom=12&size=400x300&maptype=roadmap&markers=color:red%7C44.340818,-78.741506&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA' alt = 'map' style = 'width:100%'></a><!--JD 12/02 Picture of Map-->
+                        <h3 class="contactheaders underlineTitle">General Inquiries</h3>
+                                <p>Phone: <a class=deadlink>(416) 888-8888</a></p>
+                                <p>Email: <a class=deadlink>infoinquest@lasd.ca</a></p>
+                        <h3 class="contactheaders underlineTitle">Departments</h3>
+                            <div class = "contactInfo"> <!--JD 12-08 Using flex box in css to wrap up in responsive design -->
+                                <div><h4>Field Operations</h4>
+                                    <p>Phone: <a class=deadlink>(416) 888-0001</a></p>
+                                    <p>Email: <a class=deadlink>fieldinquest@lasd.ca</a></p></div>
+                                <div><h4>Planning and Development</h4>
+                                    <p>Phone: <a class=deadlink>(416) 888-0002</a></p>
+                                    <p>Email: <a class=deadlink>planinquest@lasd.ca</a></p></div>
+                                <div><h4>Shipping and Receiving</h4>
+                                    <p>Phone: <a class=deadlink>(416) 888-0003</a></p>
+                                    <p>Email: <a class=deadlink>loginquest@lasd.ca</a></p></div>
+                                <div><h4>Capital Management</h4>
+                                    <p>Phone: <a class=deadlink>(416) 888-0004</a></p>
+                                    <p>Email: <a class=deadlink>hrinquest@lasd.ca</a></p></div>
+                                </div>  
+                    </aside>
+            </main>
+
+        <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
+            <p class="footernotes">&#169;2021. Land Air Sea Digital Inc. All Rights Reserved. Any Land Air Sea Digital products are Trademarks owned by Group 1 of GEOM102 Web Design Programming</p>
+            <p class="footernotes">Email: <a class=deadlink>infoinquest@lasd.ca</a> | Phone: <a class=deadlink>(416) 888-8888</a> | <a class=deadlink>Terms of Use</a> | <a class=deadlink>Privacy Statement</a> | <a class=deadlink>Accessibility</a></p>
+        </footer>
+
+        <script src="js/morningJava.js"></script> <!-- SV 12-02 - mod 12-06 - updated to single JS file for all coffee drinkers-->
+    </body>
+</html>
